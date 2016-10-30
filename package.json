@@ -1,0 +1,30 @@
+{
+  "name": "week18-homework",
+  "version": "1.0.0",
+  "description": "web scraper allowing comments on articles",
+  "main": "server.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaveSpeak/Week18-homework.git"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "Dave Speaker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DaveSpeak/Week18-homework/issues"
+  },
+  "homepage": "https://github.com/DaveSpeak/Week18-homework#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cheerio": "^0.22.0",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.6.5",
+    "request": "^2.76.0"
+  }
+}
