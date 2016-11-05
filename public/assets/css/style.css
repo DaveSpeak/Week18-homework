@@ -1,0 +1,46 @@
+body{
+  /*background-color: #DECADE*/
+  background-color: #F2F6D0
+}
+#wrapper{
+  width:100%;
+  margin: 0 auto;
+  padding-top: 5%;
+}
+#articles{
+  width:40%;
+  height:300px;
+/*  display:inline-block;
+*/  overflow: auto;
+}
+#notes{
+  width:25%;
+}
+#enterNotes{
+  width:25%;
+}
+#notedata{
+  width:100%;
+  height:200px;
+  border: solid 1px black;
+  background-color:#FCF5C7;
+}
+#navigation{
+  float:center;
+}
+#startitup{
+  padding:10%;
+}
+textarea, input{
+  display:block;
+  width:100%;
+  background-color: #FCF5C7;
+}
+input{
+  height:36px;
+  font-size: 24px;
+}
+textarea{
+  height:200px;
+  font-size: 18px;
+}
