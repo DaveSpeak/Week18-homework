@@ -1,5 +1,5 @@
 body{
-  background-image: image-url(../images/WSJ-cover.jpg) no-repeat center center fixed;
+  background-image: image-url("../images/WSJ-cover.jpg") no-repeat center center fixed;
 }
 body h1{
   font-size:90px;
