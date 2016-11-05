@@ -1,6 +1,21 @@
 body{
-  /*background-color: #DECADE*/
-  background-color: #F2F6D0
+  background:url(../images/WSJ-cover.jpg) no-repeat center center fixed;
+}
+body h1{
+  font-size:90px;
+  color:red;
+  float:left;
+  margin-top:7%;
+  -webkit-transform:rotate(-15deg);
+  border: solid 1px black;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+#toprow {
+  height:120px;
 }
 #wrapper{
   width:100%;
@@ -10,11 +25,31 @@ body{
 #articles{
   width:40%;
   height:300px;
-/*  display:inline-block;
-*/  overflow: auto;
+  background-color:#bbb;
+  overflow: auto;
+  border: solid 1px black;
+  border-radius: 10px;
 }
-#notes{
+#notedata{
   width:25%;
+  border-radius: 10px;
+  word-wrap:break-word;
+}
+#noteinput{
+  width:100%;
+  border-radius: 10px;
+  border: solid 1px black;
+}
+#notes h4{
+  padding:10px;
+  background-color:#bbb;
+  border: solid 1px black;
+  border-radius: 5px;
+}
+button {
+  background-color:#bbb;
+  border: solid 3px red;
+  border-radius: 5px;
 }
 #enterNotes{
   width:25%;
@@ -23,7 +58,7 @@ body{
   width:100%;
   height:200px;
   border: solid 1px black;
-  background-color:#FCF5C7;
+  background-color:#bbb;
 }
 #navigation{
   float:center;
@@ -34,7 +69,7 @@ body{
 textarea, input{
   display:block;
   width:100%;
-  background-color: #FCF5C7;
+  background-color: #bbb;
 }
 input{
   height:36px;

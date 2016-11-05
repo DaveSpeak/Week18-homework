@@ -1,14 +1,13 @@
-#!/usr/bin/env node
+// include debut npm module
 var debug = require('debug')('express');
 
-// we bring in the app we exported from server.js
+// app we exported from server.js
 var app = require('../server');
 
-// we set the port of the app
+// set the port of the app
 app.set('port', process.env.PORT || 3000);
 
 var server = app.listen(app.get('port'), function() {
-// var server = app.listen(3000, function() {
   // then save a log of the listening to our debugger.
   debug('Express server listening on port ' + server.address().port);
 });
