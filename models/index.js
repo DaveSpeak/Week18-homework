@@ -8,7 +8,7 @@ var config    = require(path.join(__dirname, '..', 'config', 'config.json'))[env
 if(process.env.MONGO_URL != undefined) {
   mongoUrl = process.env.MONGO_URL;
 }
-// Uncomment the following & 'var mongoUrl' above
+// Uncomment the following & 'var mongoUrl' above for development
 // mongoose.connect(config.mongo_url);
 // The following for heroku deployment - also comment out 'var mongoUrl' above
 mongoose.connect('mongodb://heroku_rq0gjxq2:vghvfomjnd3uekvmbqu1ud31vf@ds139267.mlab.com:39267/heroku_rq0gjxq2');
