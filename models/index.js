@@ -4,7 +4,7 @@ var path      = require("path");
 var mongoose  = require("mongoose");
 var env       = process.env.NODE_ENV || "development";
 var config    = require(path.join(__dirname, '..', 'config', 'config.json'))[env];
-var mongoUrl  = config.mongo_url;
+// var mongoUrl  = config.mongo_url;
 if(process.env.MONGO_URL != undefined) {
   mongoUrl = process.env.MONGO_URL;
 }
