@@ -4,14 +4,14 @@ var path      = require("path");
 var mongoose  = require("mongoose");
 var env       = process.env.NODE_ENV || "development";
 var config    = require(path.join(__dirname, '..', 'config', 'config.json'))[env];
-var mongoUrl  = config.mongo_url;
+// var mongoUrl  = config.mongo_url;
 if(process.env.MONGO_URL != undefined) {
   mongoUrl = process.env.MONGO_URL;
 }
-
-mongoose.connect(config.mongo_url);
-// The following for heroku deployment - also comment out 'var config' above
-// mongoose.connect('mongodb://heroku_rq0gjxq2:vghvfomjnd3uekvmbqu1ud31vf@ds139267.mlab.com:39267/heroku_rq0gjxq2');
+// Uncomment the following & 'var mongoUrl' above
+// mongoose.connect(config.mongo_url);
+// The following for heroku deployment - also comment out 'var mongoUrl' above
+mongoose.connect('mongodb://heroku_rq0gjxq2:vghvfomjnd3uekvmbqu1ud31vf@ds139267.mlab.com:39267/heroku_rq0gjxq2');
 console.log('mongoose connected');
 var db = {};
 
