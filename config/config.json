@@ -1,5 +1,5 @@
 {
   "development": {
-    "mongo_url": "mongodb://heroku_rq0gjxq2:vghvfomjnd3uekvmbqu1ud31vf@ds139267.mlab.com:39267/heroku_rq0gjxq2"
+    "mongo_url": "mongodb://localhost/week18homework"
   }
 }

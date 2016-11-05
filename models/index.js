@@ -9,7 +9,8 @@ if(process.env.MONGO_URL != undefined) {
   mongoUrl = process.env.MONGO_URL;
 }
 
-mongoose.connect(config.mongo_url);
+// mongoose.connect(config.mongo_url);
+mongoose.connect('mongodb://heroku_rq0gjxq2:vghvfomjnd3uekvmbqu1ud31vf@ds139267.mlab.com:39267/heroku_rq0gjxq2');
 console.log('mongoose connected');
 var db = {};
 
